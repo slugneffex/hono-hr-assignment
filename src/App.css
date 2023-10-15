@@ -1,38 +1,1101 @@
-.App {
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* NAVBAR */
+
+.navbar-container {
+  padding: 20px 0;
+  background-color: white;
+}
+
+.navbar-logo {
+  width: 170px;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.nav-link-rb {
+  border-right: 1px solid #d2d2d2;
+}
+
+/* HERO SECTION */
+#hero-section {
+  position: relative;
+  height: 650px;
+  background-image: url("./assets/img/heroBannerWeb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-text {
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-text .text-1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-text .text-1 p {
+  font-size: 45px;
+  font-weight: bolder;
+  color: #ffffff;
+  position: absolute;
+  left: 150px;
+  top: 350px;
+  width: 570px;
+  box-shadow: 1px 1px #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-text .text-2 {
+  width: 225px;
+  right: 50px;
+  position: absolute;
+  /* bottom: 20px; */
+  top: 110px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-text .text-2 p:first-child {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #573f75;
+}
+
+.hero-text .text-2 p:nth-child(2) {
+  font-size: 14px;
+  color: #000000;
+}
+
+.hero-text .text-2 .sign-up-btn {
+  font-size: 14px;
+  padding: 10px 50px;
+  background-color: #573f75;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.hero-text .text-2 p:last-child {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.hero-text .text-2 p:last-child a {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.hero-text .text-2 p:last-child a:hover {
+  scale: 2;
+  cursor: pointer;
+}
+
+.hero-side-div {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  height: 200px;
+  width: 30px;
+  background-color: #573f75;
+}
+
+/* trusted in members */
+.trusted-by-member {
+  padding: 20px 0;
+}
+
+.trusted-by-member p:first-child {
+  text-align: center;
+  color: #3d2161;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.trusted-by-member p:first-child span {
+  text-align: center;
+  color: #f17fa8;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.carousel-button-group {
+  position: relative;
+}
+
+.carousel-button-group button:first-child {
+  position: absolute;
+  left: -50px;
+  font-size: 24px;
+  border: none;
+  background-color: #ffffff;
+  color: #545764;
+  top: -40px;
+}
+
+.carousel-button-group button:last-child {
+  position: absolute;
+  font-size: 24px;
+  right: -30px;
+  border: none;
+  background-color: #ffffff;
+  top: -40px;
+  color: #545764;
+}
+
+/* build Superconnection */
+#build-superconnection .react-multi-carousel-list {
+  background-color: #573f75;
+}
+
+.build-superconnection-carousel {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.build-superconnection-carousel-upper-text p:first-child {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.build-superconnection-carousel-upper-text p:last-child {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.build-superconnection-carousel-bottom-text {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.build-superconnection-carousel-bottom-text p {
+  color: #12c3f4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#build-superconnection .carousel-button-group {
+  position: relative;
+}
+
+#build-superconnection .carousel-button-group button:first-child {
+  position: absolute;
+  left: 60px;
+  font-size: 24px;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  top: -130px;
+}
+
+#build-superconnection .carousel-button-group button:last-child {
+  position: absolute;
+  font-size: 24px;
+  right: 90px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  top: -130px;
+}
+
+/* Why Join */
+
+#why-join-div {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+.why-join-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.why-join-left-text p:first-child {
+  width: 450px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #573f75;
+}
+
+.why-join-left-text p:last-child {
+  font-size: 24px;
+  font-weight: 500;
+  color: #545764;
+  width: 450px;
+}
+
+.why-join-div-img img {
+  width: 500px;
+}
+
+/* How redes Work */
+#how-redes-work {
+  background-color: #573f75;
+  padding: 50px 0;
+}
+
+.how-redes-work-heading {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.how-redes-work-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 60px; */
+  margin-top: 80px;
+}
+
+.how-redes-work-content-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.how-redes-work .left {
+  color: #12c3f4;
+}
+.how-redes-work .mid {
+  color: #68dca8;
+}
+.how-redes-work .right {
+  color: #f17fa8;
+}
+
+.how-redes-work-content-data img {
+  height: 60px;
+}
+
+.how-redes-work-content-data p:first-child {
+  width: 190px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.how-redes-work-content-data p:last-child {
+  width: 250px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* People You MIGHT MEET */
+
+.people-you-might-meet-div {
+  background-image: url("./assets/img/Image-16.png");
+  background-size: 100%, 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.people-you-might-meet-heading {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  color: #573f75;
+  margin-bottom: 40px;
+}
+
+.carousel-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-text p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #573f75;
+}
+
+.carousel-text p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  color: #545764;
+}
+
+.people-you-might-meet-div .carousel-button-group {
+  position: relative;
+}
+
+.people-you-might-meet-div .carousel-button-group button:first-child {
+  position: absolute;
+  left: -60px;
+  font-size: 24px;
+  border: none;
+  color: #545764;
+  background-color: transparent;
+  top: -140px;
+}
+
+.people-you-might-meet-div .carousel-button-group button:last-child {
+  position: absolute;
+  font-size: 24px;
+  right: -60px;
+  color: #545764;
+  border: none;
+  background-color: transparent;
+  top: -140px;
+}
+
+/* Good Company */
+.good-company {
+  background-image: url("./assets//img/Image-17a.png");
+  background-size: 100%, 100%;
+  padding: 50px 0 80px 0;
+}
+
+.good-company-heading {
+  font-size: 64px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+
+.good-container-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.good-chat-img {
+  position: relative;
+}
+
+.good-text {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.good-text p:first-child {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.good-text p:last-child {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Love Us */
+#love-us {
+  padding: 50px 0 80px 0;
+  background-image: url("./assets/img/Image-16.png");
+  background-size: 100%, 100%;
+}
+
+.love-us-heading {
+  font-size: 64px;
+  text-align: center;
+  font-weight: 600;
+  color: #573f75;
+  margin-bottom: 80px;
+}
+
+#love-us .carousel-data {
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #573f75;
+  margin: 0 30px;
+}
+
+#love-us .carousel-data img {
+  margin: 0 30px 30px 0;
+  height: 150px;
+}
+
+#love-us .carousel-data .carousel-top-para {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#love-us .carousel-data .carousel-caption-left p {
+  color: #68dca8;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#love-us .carousel-data .carousel-caption-right p {
+  color: #12c3f4;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#love-us .carousel-button-group {
+  position: relative;
+}
+
+#love-us .carousel-button-group button:first-child {
+  position: absolute;
+  left: -60px;
+  font-size: 24px;
+  border: none;
+  color: #545764;
+  background-color: transparent;
+  top: -140px;
+}
+
+#love-us .carousel-button-group button:last-child {
+  position: absolute;
+  font-size: 24px;
+  right: -60px;
+  color: #545764;
+  border: none;
+  background-color: transparent;
+  top: -140px;
+}
+
+/* Footer */
+
+.upper-footer {
+  background-color: #5b5b5b;
+}
+
+.upper-footer-content {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.upper-footer-left-content ul a {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.upper-footer-left-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-size: small;
+}
+
+.upper-footer-left-content ul {
+  list-style: none;
+  line-height: 3;
+}
+
+.follow-logo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.lower-footer {
+  background-color: #434242;
+  padding: 10px 0;
+  text-align: right;
+  color: #ffffff;
+  font-size: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lower-footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 475px) {
+  .desktop {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mobile {
+    display: block;
   }
+
+  /* NAVBAR */
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .navbar-toggler {
+    outline: none;
+    border: none;
+    width: 50px;
+  }
+
+  .navbar-toggler:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+    width: 50px;
+  }
+
+  .navbar-toggler span {
+    width: 25px;
+  }
+
+  /* HERO SECTION */
+  #hero-section {
+    position: relative;
+    height: 650px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+  }
+
+  .bannerbg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-text {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .hero-text .text-1 {
+    text-align: center;
+  }
+
+  .hero-text .text-1 p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    width: 275px;
+    box-shadow: 1px 1px #ffffff;
+  }
+
+  .hero-text .text-2 {
+    width: 285px;
+    right: 50px;
+    position: absolute;
+    /* bottom: 20px; */
+    top: 350px;
+  }
+
+  .hero-text .text-2 p:first-child {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #573f75;
+  }
+
+  .hero-text .text-2 p:nth-child(2) {
+    font-size: 11px;
+    color: #000000;
+  }
+
+  .hero-text .text-2 .sign-up-btn {
+    font-size: 12px;
+    padding: 8px 25px;
+    background-color: #573f75;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .hero-text .text-2 p:last-child {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .hero-text .text-2 p:last-child a {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .hero-text .text-2 p:last-child a:hover {
+    scale: 2;
+    cursor: pointer;
+  }
+
+  .hero-side-div {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+    height: 200px;
+    width: 30px;
+    background-color: #573f75;
+  }
+
+  /* trusted in members */
+  .trusted-by-member {
+    padding: 20px 0;
+  }
+
+  .trusted-by-member p:first-child {
+    text-align: center;
+    color: #3d2161;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+  }
+
+  .trusted-by-member p:first-child span {
+    text-align: center;
+    color: #f17fa8;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .carousel-button-group {
+    position: relative;
+  }
+
+  .carousel-button-group button:first-child {
+    position: absolute;
+    left: -50px;
+    font-size: 24px;
+    border: none;
+    background-color: #ffffff;
+    color: #545764;
+    top: -40px;
+  }
+
+  .carousel-button-group button:last-child {
+    position: absolute;
+    font-size: 24px;
+    right: -30px;
+    border: none;
+    background-color: #ffffff;
+    top: -40px;
+    color: #545764;
+  }
+
+  /* build Superconnection */
+  #build-superconnection .react-multi-carousel-list {
+    background-color: #573f75;
+  }
+
+  .build-superconnection-carousel {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .build-superconnection-carousel-upper-text p:first-child {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .build-superconnection-carousel-upper-text p:last-child {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .build-superconnection-carousel-bottom-text {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .build-superconnection-carousel-bottom-text p {
+    color: #12c3f4;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  /* Why Join */
+
+  #why-join-div {
+    background-color: #f5f5f5;
+    padding: 50px 0 !important;
+  }
+  .why-join-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .why-join-left-text p:first-child {
+    width: 300px !important;
+    font-size: 40px !important;
+    font-weight: 700;
+    color: #573f75;
+  }
+
+  .why-join-left-text p:last-child {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #545764;
+    width: 350px !important;
+  }
+
+  .why-join-div-img img {
+    width: 325px !important;
+  }
+
+  /* How redes Work */
+  #how-redes-work {
+    background-color: #573f75;
+    padding: 30px 0;
+  }
+
+  .how-redes-work-heading {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .how-redes-work-content {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .how-redes-work-content-data {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .how-redes-work .left {
+    color: #12c3f4;
+  }
+  .how-redes-work .mid {
+    color: #68dca8;
+  }
+  .how-redes-work .right {
+    color: #f17fa8;
+  }
+
+  .how-redes-work-content-data img {
+    height: 40px;
+  }
+
+  .how-redes-work-content-data p:first-child {
+    width: 190px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+  .how-redes-work-content-data p:last-child {
+    width: 250px;
+    font-size: 10px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+
+  /* People You MIGHT MEET */
+
+  .people-you-might-meet-div {
+    background-image: url("./assets/img/Image-16.png");
+    background-size: 100%, 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .people-you-might-meet-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #573f75;
+    margin-bottom: 40px;
+  }
+
+  .carousel-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .carousel-text p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: #573f75;
+  }
+
+  .carousel-text p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    color: #545764;
+  }
+
+  .people-you-might-meet-div .carousel-button-group {
+    position: relative;
+  }
+
+  .people-you-might-meet-div .carousel-button-group button:first-child {
+    position: absolute;
+    left: -60px;
+    font-size: 24px;
+    border: none;
+    color: #545764;
+    background-color: transparent;
+    top: -140px;
+  }
+
+  .people-you-might-meet-div .carousel-button-group button:last-child {
+    position: absolute;
+    font-size: 24px;
+    right: -60px;
+    color: #545764;
+    border: none;
+    background-color: transparent;
+    top: -140px;
+  }
+
+  /* Good Company */
+  .good-company {
+    background-image: url("./assets//img/Image-17a.png");
+    background-size: 100%, 100%;
+    padding: 40px 0 40px 0;
+  }
+
+  .good-company-heading {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  .good-container-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .good-chat-img {
+    position: relative;
+  }
+
+  .good-chat-img img {
+    width: 200px;
+  }
+
+  .good-text {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .good-text p:first-child {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .good-text p:last-child {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* Love Us */
+  #love-us {
+    padding: 40px 0 40px 0;
+    background-image: url("./assets/img/Image-16.png");
+    background-size: 100%, 100%;
+  }
+
+  .love-us-heading {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #573f75;
+    margin-bottom: 40px;
+  }
+
+  #love-us .carousel-data {
+    padding: 30px 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #573f75;
+    margin: 0 30px;
+  }
+
+  #love-us .carousel-data img {
+    margin: 0 0 10px 0;
+    height: 125px;
+    border-radius: 100%;
+  }
+
+  #love-us .carousel-data .carousel-top-para {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #love-us .carousel-data .carousel-caption-left p {
+    color: #68dca8;
+    font-size: 10px;
+    margin-bottom: 0;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  #love-us .carousel-data .carousel-caption-right p {
+    color: #12c3f4;
+    font-size: 10px;
+    margin-bottom: 0;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  #love-us .carousel-button-group {
+    position: relative;
+  }
+
+  #love-us .carousel-button-group button:first-child {
+    position: absolute;
+    left: -60px;
+    font-size: 24px;
+    border: none;
+    color: #545764;
+    background-color: transparent;
+    top: -140px;
+  }
+
+  #love-us .carousel-button-group button:last-child {
+    position: absolute;
+    font-size: 24px;
+    right: -60px;
+    color: #545764;
+    border: none;
+    background-color: transparent;
+    top: -140px;
+  }
+
+  /* Footer */
+
+  .upper-footer {
+    background-color: #5b5b5b;
+  }
+
+  .upper-footer-content {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #ffffff;
+  }
+
+  .upper-footer-left-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: small;
+  }
+
+  .upper-footer-left-content-img {
+    width: 360px;
+    margin-left: 20px;
+  }
+ 
+  .upper-footer-left-content img {
+    width: 100px;
+  }
+
+  .upper-footer-left-content ul {
+    list-style: none;
+    line-height: 2.5;
+  }
+  
+  .upper-footer-left-content ul a {
+    font-size: 12px;
+  }
+
+  .follow-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .lower-footer {
+    background-color: #434242;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 200;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
 }

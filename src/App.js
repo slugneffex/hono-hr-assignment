@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import BuildSuperConnection from './components/BuildSuperConnection';
+import Footer from './components/Footer';
+import GoodCompany from './components/GoodCompany';
+import HeroSection from './components/HeroSection';
+import HowRedesWork from './components/HowRedesWork';
+import LoveUS from './components/LoveUS';
+import TopNavbar from './components/Navbar';
+import PeopleYouMeet from './components/PeopleYouMeet';
+import TrustedByMember from './components/TrustedByMember';
+import WhyJoin from './components/WhyJoin';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TopNavbar />
+      <HeroSection />
+      <div style={{backgroundColor: '#f5f5f5', height: '100px', borderBottom: '1px solid #e0e0e0'}}></div>
+      <TrustedByMember />
+      <BuildSuperConnection />
+      <WhyJoin />
+      <HowRedesWork />
+      <PeopleYouMeet />
+      <GoodCompany />
+      <LoveUS />
+      <Footer />
+    </>
   );
 }
 
